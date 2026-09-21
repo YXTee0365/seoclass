@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>嘉義市一日旅行指南</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, "Microsoft JhengHei", sans-serif;
+            background-color: #f5f3ef;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.45)
+            ),
+            url("https://images.unsplash.com/photo-1500534623283-312aade485b7")
+            center/cover;
+
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        nav {
+            background-color: #3f5145;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            color: #f4d58d;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: 50px auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 35px;
+            margin-bottom: 35px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #3f5145;
+            border-left: 6px solid #d6a85f;
+            padding-left: 12px;
+            margin-bottom: 20px;
+        }
+
+        .intro-image {
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .article {
+            font-size: 17px;
+            text-align: justify;
+        }
+
+        .places {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .place-card {
+            background-color: #f7f5f0;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .place-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .place-card h3 {
+            color: #3f5145;
+        }
+
+        .video {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .video iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: none;
+            left: 0;
+            top: 0;
+        }
+
+        .map {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 12px;
+        }
+
+        footer {
+            background-color: #3f5145;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 34px;
+            }
+
+            .places {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                width: 92%;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 首頁 -->
+    <header id="home">
+        <div>
+            <h1>嘉義市一日旅行指南</h1>
+            <p>慢慢走，慢慢看，發現嘉義的城市魅力</p>
+        </div>
+    </header>
+
+    <!-- 導覽列 -->
+    <nav>
+        <a href="#about">嘉義介紹</a>
+        <a href="#places">推薦景點</a>
+        <a href="#video">影片</a>
+        <a href="#map">地圖</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- 文章 -->
+        <section id="about">
+            <h2>認識嘉義</h2>
+
+            <img
+                class="intro-image"
+                src="https://images.unsplash.com/photo-1500534623283-312aade485b7"
+                alt="嘉義旅行風景">
+
+            <div class="article">
+                <p>
+                    嘉義市是一座適合慢慢旅行的城市。與台灣其他大型城市相比，
+                    嘉義的生活步調相對悠閒，街道上可以看到許多具有歷史感的建築，
+                    也能在巷弄中發現傳統小吃與特色咖啡店。對第一次來到嘉義的旅客來說，
+                    一天的時間雖然不長，卻可以安排出相當豐富的行程。早上可以先到
+                    檜意森活村散步，欣賞日治時期留下的木造建築，感受嘉義與林業發展
+                    之間的歷史關係。中午則可以品嚐火雞肉飯、砂鍋魚頭等在地美食。
+                    下午可以前往文化路一帶逛街，或到嘉義公園與森林之歌附近散步。
+                    傍晚時分，再找一家咖啡店休息，享受城市慢下來的時光。
+                    嘉義最迷人的地方，或許不是某一個著名景點，而是旅行途中
+                    不經意遇見的人、街道與味道。只要放慢腳步，就能發現這座城市
+                    細膩而獨特的生活風景。
+                </p>
+            </div>
+        </section>
+
+        <!-- 景點 -->
+        <section id="places">
+            <h2>推薦景點</h2>
+
+            <div class="places">
+
+                <div class="place-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a"
+                        alt="城市景色">
+                    <h3>檜意森活村</h3>
+                    <p>
+                        由日治時期木造建築群改造而成，
+                        適合散步、拍照與認識嘉義的林業歷史。
+                    </p>
+                </div>
+
+                <div class="place-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1523731407965-2430cd12f5e4"
+                        alt="公園景色">
+                    <h3>嘉義公園</h3>
+                    <p>
+                        綠意豐富的城市公園，
+                        很適合下午散步或休息。
+                    </p>
+                </div>
+
+                <div class="place-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb"
+                        alt="咖啡店">
+                    <h3>文化路商圈</h3>
+                    <p>
+                        可以品嚐嘉義小吃，
+                        也是晚上感受城市氣氛的好地方。
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- YouTube -->
+        <section id="video">
+            <h2>嘉義旅行影片</h2>
+
+            <p>
+                如果想先了解嘉義的城市風景，
+                可以透過影片快速認識這座城市。
+            </p>
+
+            <div class="video">
+                <iframe
+                    src="https://www.youtube.com/embed/ScMzIvxBSi4"
+                    title="嘉義旅遊影片"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Google Map -->
+        <section id="map">
+            <h2>嘉義地圖</h2>
+
+            <p>
+                以下地圖可以用來查看嘉義市的地理位置，
+                也方便規劃一天的旅行路線。
+            </p>
+
+            <iframe
+                class="map"
+                src="https://www.google.com/maps?q=嘉義市&output=embed"
+                loading="lazy">
+            </iframe>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 嘉義市一日旅行指南</p>
+        <p>Made with HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
